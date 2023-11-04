@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <title>Conversor de monedas</title>
+</head>
+<body>
+
+    <h1><span id="error" class="h"></span></h1>
+    <h1 class="h">Conversor de pricipales indicadores</h1>
+
+
+  <main class="padre">
+    <section class="selectybutton">
+
+
+
+      <!-- Contenedor que contiene aquellos elementos que se encuentran hacia abajo a partir de "Seleccione origen de sus fondos". -->
+      <div class="selectybutton_int1">
+
+        <p class="p">
+          Seleccione origen de sus fondos
+        </p>
+
+        <select id="indicadorOrigen">
+          <option value="clp">Pesos Chilenos (CLP)</option>
+          <option value="dolar">Dólar</option>
+          <option value="euro">Euro</option>
+          <option value="bitcoin">Bitcoin</option>
+          <option value="libra_cobre">Libra cobre</option>
+        </select>
+
+        <input type="text" id="cantidadAconvertir" placeholder="Ingrese aquí la cantidad">
+
+      </div>
+
+
+
+
+      <!-- Contenedor que contiene aquellos elementos que se encuentran hacia abajo a partir de "Seleccione indicador a evaluar". -->
+      <div class="selectybutton_int2">
+
+        <p class="p">
+          Seleccione indicador a evaluar
+        </p>
+
+        <select id="indicadorAevaluar">
+          <option value="">- Indicador a evaluar -</option>
+          <option value="dolar">Dólar</option>
+          <option value="euro">Euro</option>
+          <option value="bitcoin">Bitcoin</option>
+          <option value="uf">Unidad de Fomento</option>
+          <option value="libra_cobre">Libra cobre</option>
+        </select>
+
+        <button id="convertir">
+          Convertir
+        </button>
+
+      </div>
+    </section>
+
+      <h3 class="resultado">Monto a recibir: <span id="resultado"></span></h3>
+  </main>
+
+
+
+
+
+
+
+  <!-- Contenedor para el elemento 'canvas' -->
+  <h1><span id="error1" class="h"></span></h1>
+  <div class="grafica">
+    <canvas id="myChart" class="canvas"></canvas>
+  </div>
+  
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

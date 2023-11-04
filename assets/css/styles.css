@@ -1,0 +1,140 @@
+body{
+  width: 99vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 123, 0);
+}
+
+
+
+
+/* Clase correspondiente  la equiqueta h1: dónde se muestra el titulo "Conversor de pricipales indicadores". */
+.h{
+  color: white;
+  font-style:inherit;
+}
+
+
+
+
+
+/* Padre es la clase correspociente a la etiqueta main. En esta se encuentran ambos select, ambos titulos, el input y el botón. */
+.padre{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: auto;
+  background-color: grey;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+}
+
+
+
+
+/* Esta clase, por su parte, corresponde a la etiqueta section. Dentro de esta, existen dos divs: selectybutton_int1 y selectybutton_int2 */
+.selectybutton{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+.selectybutton_int1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+
+
+
+
+/* Div con clase selectybutton_int1 */
+.selectybutton_int1 input{
+  text-align: center;
+  width: 48%;
+  height: 25%;
+  margin-top: 10px;
+}
+.selectybutton_int1 select{
+  height: 25%;
+  width: 50%;
+  text-align: center;
+}
+
+
+
+
+
+/* Div con clase selectybutton_int2 */
+.selectybutton_int2{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.selectybutton_int2 select{
+  height: 25%;
+  width: 50%;
+  text-align: center;
+}
+.selectybutton_int2 button{
+  margin-top: 5px;
+  width: 50%;
+  height: 35%;
+  border-radius: 5%;
+  cursor: pointer;
+  background-color: rgb(105, 176, 197);
+  font-size: 20px;
+}
+.p{
+  font-style: italic;
+  font-size: 25px;
+  color: white;
+}
+
+
+
+
+
+/* Resultado es la clase que corresponde a la etiqueta h3: aquella donde se muestra el resultado de la conversión. */
+.resultado{
+  font-size: 30px;
+  color: white;
+  font-style: italic;
+}
+
+
+
+
+
+/* Grafica, por su parte, es la clase del div que contiene a la etiqueta 'canvas'. */
+.grafica{
+  width: 70vw;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  margin-top: 15px;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+}
+.canvas{
+  width: 90%;
+  height: 100%;
+}
